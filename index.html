@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <label>Image Url</label>
+            <input required type="text" placeholder="https://example.com">
+
+            <label>Full Name</label>
+            <input required type="text" placeholder="Enter Full Name">
+
+            <label>Home Town</label>
+            <input required type="text" placeholder="Enter HomeTown">
+
+            <label>Purpose</label>
+            <input required type="text" placeholder="e.g., Quick appointment">
+
+            <label>Category</label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="emergency">
+                <span>Emergency</span>
+            </label>
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="important">
+                <span>Important</span>
+            </label>
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="urgent">
+                <span>Urgent</span>
+            </label>
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="norush">
+                <span>No Rush</span>
+            </label>
+
+            <button class="submit-btn">Create Note</button>
+            <button class="close-btn">Close</button>
+
+
+        </form>
+        <label for=""></label>
+    </div>
+    <div class="note-container">
+        <div class="left-icons">
+            <button class="add left-btn"><i class="fa-solid fa-plus"></i></button>
+            <button class="up left-btn">
+               <i class="fa-solid fa-angle-up"></i>
+            </button>
+            <button class="down left-btn">
+                <i class="fa-solid fa-angle-down"></i>
+            </button>
+        </div>
+        <div class="stack">
+            <!-- <div class="card">
+                <div class="img">
+                    <img src="https://i.pinimg.com/1200x/00/18/d0/0018d069f0ee7df7f0fccdd4aa6d14c4.jpg" alt="">
+                </div>
+                <h1>Gojo</h1>
+                <div class="location">
+                    <p>Home</p>
+                    <p>Singapore</p>
+                </div>
+                <div class="booking">
+                    <p>Book</p>
+                    <p>3 Times</p>
+                </div>
+                <button class="c-btn">Call</button>
+                <button class="m-btn">Message</button>
+            </div> -->
+        </div>
+        <div class="right-colors">
+            <div class="c1 color" style="background-color: rgb(0, 0, 0);"></div>
+            <div class="c2 color" style="background-color: rgb(162, 0, 255);"></div>
+            <div class="c2 color" style="background-color: rgb(255, 128, 0);"></div>
+            <div class="c4 color" style="background-color: rgb(0, 255, 170);"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
